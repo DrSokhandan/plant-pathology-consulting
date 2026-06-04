@@ -149,22 +149,14 @@ section{
     box-shadow:var(--shadow);
 }
 
-.profile-placeholder{
+.profile-photo{
     width:180px;
     height:180px;
     border-radius:50%;
-    background:var(--accent);
+    object-fit:cover;
+    display:block;
     margin:auto;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:3rem;
-    color:var(--primary);
-}
-
-.about-content h3{
-    margin-bottom:15px;
-    color:var(--primary);
+    border:4px solid var(--primary);
 }
 
 .services-grid{
@@ -312,7 +304,10 @@ solutions for growers, industry, and government.
 <div class="about-grid">
 
 <div class="profile-card">
-<div class="profile-placeholder">🌱</div>
+    <img src="images/nemat-sokhandan-bashir.jpg"
+         alt="Dr Nemat Sokhandan"
+         class="profile-photo">
+
 <h3 style="margin-top:20px;">Dr Nemat Sokhandan</h3>
 <p>Plant Pathologist</p>
 </div>
